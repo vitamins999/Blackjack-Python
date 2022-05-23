@@ -1,3 +1,5 @@
+import Player
+
 def main():
     print("Welcome to BLACKJACK!\n\n")
 
