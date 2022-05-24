@@ -2,36 +2,36 @@ class Player:
 
     name = ""
     score = 0
-    totalHandValue = 0
-    totalBalance = 100.00
+    total_hand_value = 0
+    total_balance = 100.00
 
     def __init__(self, name):
         self.name = name
 
-    def AddWinToScore(self):
+    def add_win_to_score(self):
         self.score += 1
 
-    def GetScore(self):
+    def get_score(self):
         return self.score
 
-    def AddValueToHand(self, value):
-        self.totalHandValue += value
+    def add_value_to_hand(self, value):
+        self.total_hand_value += value
 
-    def GetTotalHandValue(self):
-        return self.totalHandValue
+    def get_total_hand_value(self):
+        return self.total_hand_value
 
-    def ResetTotalHandValue(self):
-        self.totalHandValue = 0
+    def reset_total_hand_value(self):
+        self.total_hand_value = 0
 
-    def AddToTotalBalance(self, value):
-        self.totalBalance += value
+    def add_to_total_balance(self, value):
+        self.total_balance += value
 
-    def SubtractFromTotalBalance(self, value):
-        self.totalBalance -= value
+    def subtract_from_total_balance(self, value):
+        self.total_balance -= value
 
-    def GetTotalBalance(self):
-        return self.totalBalance
+    def get_total_balance(self):
+        return self.total_balance
 
-    def GetName(self):
+    def get_name(self):
         return self.name
 
