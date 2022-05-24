@@ -9,10 +9,10 @@ class Card:
         self.suite = suite
         self.value = value
 
-    def GetName(self):
+    def get_name(self):
         return f"{self.name} of {self.suite}"
 
-    def GetValue(self):
+    def get_value(self):
         return self.value
 
 
