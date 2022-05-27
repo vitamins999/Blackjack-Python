@@ -1,4 +1,4 @@
-import Card
+from Card import Card
 
 class Deck:
     
@@ -15,23 +15,21 @@ class Deck:
     def generate_suite(self, suite_name):
         suite = []
 
-        suite.append(Card.Card("Two", suite_name, 2))
-        suite.append(Card.Card("Three", suite_name, 3))
-        suite.append(Card.Card("Four", suite_name, 4))
-        suite.append(Card.Card("Five", suite_name, 5))
-        suite.append(Card.Card("Six", suite_name, 6))
-        suite.append(Card.Card("Seven", suite_name, 7))
-        suite.append(Card.Card("Eight", suite_name, 8))
-        suite.append(Card.Card("Nine", suite_name, 9))
-        suite.append(Card.Card("Ten", suite_name, 10))
-        suite.append(Card.Card("Jack", suite_name, 10))
-        suite.append(Card.Card("Queen", suite_name, 10))
-        suite.append(Card.Card("King", suite_name, 10))
-        suite.append(Card.Card("Ace", suite_name, 11))
+        suite.append(Card("Two", suite_name, 2))
+        suite.append(Card("Three", suite_name, 3))
+        suite.append(Card("Four", suite_name, 4))
+        suite.append(Card("Five", suite_name, 5))
+        suite.append(Card("Six", suite_name, 6))
+        suite.append(Card("Seven", suite_name, 7))
+        suite.append(Card("Eight", suite_name, 8))
+        suite.append(Card("Nine", suite_name, 9))
+        suite.append(Card("Ten", suite_name, 10))
+        suite.append(Card("Jack", suite_name, 10))
+        suite.append(Card("Queen", suite_name, 10))
+        suite.append(Card("King", suite_name, 10))
+        suite.append(Card("Ace", suite_name, 11))
 
         return suite
 
     def get_all_cards_in_deck(self):
         return self.all_cards
-
-
