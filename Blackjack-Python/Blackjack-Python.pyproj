@@ -22,6 +22,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Card.py" />
+    <Compile Include="Dealer.py" />
+    <Compile Include="Person.py" />
     <Compile Include="Player.py" />
     <Compile Include="DrawPile.py" />
     <Compile Include="Deck.py" />

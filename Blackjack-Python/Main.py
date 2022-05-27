@@ -1,13 +1,14 @@
-import Player
-import DrawPile
+from Player import Player
+from Dealer import Dealer
+from DrawPile import DrawPile
 
 def main():
     print("Welcome to BLACKJACK!\n\n")
 
     player_name = get_player_name()
 
-    player = Player.Player(player_name)
-    dealer = Player.Player("Dealer")
+    player = Player(player_name)
+    dealer = Dealer()
 
     print(f"\nHello {player.get_name()}!\n")
 
@@ -44,7 +45,7 @@ def get_amount_of_decks(player):
 def play_game(player, dealer, amount_of_decks):
     keep_playing = True
 
-    draw_pile = DrawPile.DrawPile(amount_of_decks)
+    draw_pile = DrawPile(amount_of_decks)
     print("")
 
     while keep_playing:
